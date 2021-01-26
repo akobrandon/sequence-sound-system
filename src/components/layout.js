@@ -25,10 +25,18 @@ const Layout = ({children, className}) => {
 
   return (
     <div className="primary-container">
-      <Header>
-        <Logo title="Sequence Sound Systems" />
-        <Navigation/>
-      </Header>
+        <div className="row text-center header">
+        <div className="col-12">
+        <video src="/assets/intro.mp4" playsInline
+        preload="auto" muted
+        autoPlay={true} controls={false} />
+        </div>
+        <div className="col-12">
+          <Navigation/>
+        </div>
+        </div>
+        
+    
       <main className={"container " + className}>
         {children}
       </main>

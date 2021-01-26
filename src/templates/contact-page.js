@@ -33,20 +33,17 @@ const Contact = ({data}) => {
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
-      <div className="wrapper">
+      <div className="wrapper text-center">
         <form className="contact-form" action="/thanks" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
           <p>
-            <label>Name<input type="text" name="name" required /></label>   
+            <input placeholder="Name" type="text" name="name" required />   
           </p>
           <p>
-            <label>Email<input type="email" name="email" required /></label>
+            <input placeholder="Email" type="email" name="email" required />
           </p>
           <p>
-            <label>Subject<input type="text" name="subject" required /></label>   
-          </p>
-          <p>
-            <label>Message<textarea name="message" required ></textarea></label>
+            <textarea placeholder="Message" name="message" required ></textarea>
           </p>
           <p className="text-align-right">
             <button className="button" type="submit">Send Message <span className="icon -right"><RiSendPlane2Line/></span></button>

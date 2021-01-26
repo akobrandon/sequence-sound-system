@@ -1,6 +1,9 @@
+// Bootstrap functions
+@import '../../../node_modules/bootstrap/scss/functions';
 @import "theme-variables";
+// Bootstrap core
+@import '../../../node_modules/bootstrap/scss/bootstrap';
 @import "defaults";
-@import "lib/css-grid-utility";
 
 // .primary-container {
 // 	display: grid;
@@ -431,8 +434,47 @@ article img {
 	}
 }
 
+
+
 @import "utility";
 
 // Libraries
-@import "lib/prism-default"
+@import "lib/prism-default";
+
+
+
+
+
+body{
+	background: #000!important;
+	color: white!important;
+}
+
+.site-logo{
+	padding: 1.5rem 0;
+	font-size: 2rem;
+	img{
+		max-width: 350px;
+		display: block;
+		margin: 0 auto;
+		mix-blend-mode: lighten;
+	}
+}
+video{
+	max-width: 500px;
+	width: 100%;
+	margin: -50px auto -10px;
+	transform: translateX(15px)
+}
+.header{
+ margin-bottom: 50px;
+}
+
+#ffwd_container1_0 #ffwd_container2_0 .blog_style_object_container_0 {
+       background-color: #D3D3D3 !important;
+}
+
+#ffwd_container1_0 #ffwd_container2_0 .ffwd_blog_style_object_info_container_0 {
+       background-color: #D3D3D3 !important;
+}
 

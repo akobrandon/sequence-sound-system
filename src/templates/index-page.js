@@ -41,10 +41,9 @@ const HomePage = ({ data }) => {
 	return (
 		<Layout>
       <SEO/>
-      <div className="home-banner grids col-1 sm-2">
+      <div className="mt-8 text-center">
         <div>
-          <h1 class="title">Sequence Sound Systems</h1>
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsequencesoundsystem&tabs=timeline&width=340&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=144693092279706" width={340} height={1000} style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder={0} allowFullScreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" />
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsequencesoundsystem&colorscheme=dark&tabs=timeline&width=340&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=144693092279706" width={340} height={1000} style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder={0} allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" />
         </div>
       </div>
 		</Layout>
